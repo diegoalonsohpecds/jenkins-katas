@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'gradle:jdk11'
-    }
-
-  }
+  agent none
   stages {
     stage('Say Helloweeee') {
       parallel {
